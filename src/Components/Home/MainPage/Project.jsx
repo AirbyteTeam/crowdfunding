@@ -73,7 +73,6 @@ function Project() {
             }
         ]
     };
-
     const getLikes = async () => {
         await api.get(`like/${localStorage.getItem("phoneNumber")}`).then((response) => {
             if (response.data.projects !== undefined) {
@@ -81,6 +80,7 @@ function Project() {
             }
         })
     }
+
     const toggleLikeBtn = async (id, likeStatus) => {
         if (likeStatus) {
             try {
@@ -140,10 +140,9 @@ function Project() {
                                          className="d-flex justify-content-center px-2 col-md-3 col-sm-4 col-xl-12">
                                         <div className="project-item" style={{maxWidth: "20rem"}}>
                                             <div className={"thumb"}>
-                                                <img className={"thumb"} src={profileList[index]}
-                                                     alt=""
-                                                />
+                                                <img className={"thumb"} src={profileList[index]} alt=""/>
                                             </div>
+
                                             <div className="content">
                                                 <h5 className="title">
                                                     <a href="">{project.title}</a>

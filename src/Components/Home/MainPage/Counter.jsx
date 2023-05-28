@@ -20,7 +20,7 @@ function Counter() {
     return (
         <>
             <section className="counter-section-one mt-negative">
-                <div className="container primary-bg">
+                <div className="container gradient-bg">
                     <div className="row counter-boxes justify-content-xl-between justify-content-center">
                         <div className="col-xl-auto col-lg-5 col-md-5 col-sm-6">
                             <div className="counter-box mb-40 icon-left">

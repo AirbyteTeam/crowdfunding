@@ -102,8 +102,8 @@
 
 :root {
     --body-color: #696969;
-    --primary-color: #02a95c;
-    --secondary-color: #001d23;
+    --primary-color: #4eb801;
+    --secondary-color: #0b1b00;
     --primary-soft-color: #edf9f3;
     --white: #fff;
     --border-color: rgb(0 29 35 / 10%);
@@ -543,7 +543,7 @@ a:hover {
     transition: all 0.3s ease-out 0s;
     color: var(--white);
     background-color: var(--primary-color);
-    padding: 0.7rem 1.2rem;
+    padding: 1rem 5rem;
     border-radius: 1.2rem;
     position: relative;
     z-index: 1;
@@ -744,8 +744,8 @@ a:hover {
 }
 
 .navbar-wrapper .nav-menu a {
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: bold;
     line-height: 1;
     color: var(--secondary-color);
     margin: 0 0.9rem;
@@ -1426,7 +1426,7 @@ a:hover {
 }
 
 .site-footer .copyright-area {
-    background-color: #01171c;
+    background-color: #022415;
     padding: 20px 40px;
 }
 
@@ -1545,6 +1545,10 @@ a:hover {
 .main-img {
     margin: 0 30px;
 }
+.gradient-bg{
+    background: rgb(78,184,1);
+    background: linear-gradient(90deg, rgba(78,184,1,1) 0%, rgba(172,222,1,1) 49%, rgba(103,194,1,1) 100%);
+}
 
 .main-img img {
     border-radius: 2rem;
@@ -1576,7 +1580,7 @@ a:hover {
 }
 
 .hero-area-two .hero-text .title {
-    font-size: 50px;
+    font-size: 2.6rem;
     line-height: 1.06;
     margin-bottom: 40px;
     font-weight: bold;
@@ -2125,14 +2129,15 @@ a:hover {
     -ms-flex-pack: justify;
     justify-content: space-between;
     display: flex;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0.6rem 0;
     padding: 0 0 0 1rem;
 }
 
 .project-items .project-item .value-title {
-    font-weight: 500;
-    color: #5f5f5f;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
 }
 
 .project-items .project-item .stats-value .value,
@@ -2312,7 +2317,7 @@ a:hover {
 }
 
 .project-items.project-style-three .project-item .value-title {
-    color: #c9c9c9;
+    color: #fff;
 }
 
 .project-items.project-style-three .project-item .title {
@@ -2951,7 +2956,8 @@ a:hover {
     left: -50px;
     z-index: -1;
     height: 100%;
-    background-color: var(--primary-color);
+    background: rgb(78,184,1);
+    background: linear-gradient(90deg, rgba(78,184,1,1) 0%, rgba(172,222,1,1) 49%, rgba(103,194,1,1) 100%);
 }
 
 .counter-with-image-text-block .counter-boxes-area {
@@ -5340,14 +5346,14 @@ a:hover {
 }
 
 .contact-info-boxes .info-content h5 {
-    font-size: 22px;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .contact-info-boxes .info-content p {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1.2em;
 }
 
 .contact-from-area {
@@ -5380,5 +5386,26 @@ a:hover {
 .contact-form textarea:not(:focus) {
     border-color: transparent;
 }
+.card-container{
+    width: 80%;
+    margin-bottom: 5rem;
+}
+.card-container .card{
+    border:none;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    width: 25%;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #00000047;
+}
+.card-container .card h2{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-container .card img{
+    width: 4rem;
+}
+
 
 

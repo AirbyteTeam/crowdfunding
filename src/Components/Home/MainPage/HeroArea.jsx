@@ -2,6 +2,7 @@ import React from 'react';
 import Header from "./Header";
 import heroLine2 from '../../../assets/img/hero/hero-line-3.png'
 import heroTwoImg from '../../../assets/img/slider_1.jpg'
+import crowd from "../../../assets/img/crodfinding.png"
 import {Link} from "react-router-dom";
 
 function MainPage() {
@@ -14,7 +15,7 @@ function MainPage() {
                         <div className="col-lg-6 col-md-8 col-sm-11">
                             <div className="hero-text">
                                 <h1 className="title wow fadeInLeft" data-wow-delay="0.2s">
-                                    ما در کارستون دست یاری شما هستیم…
+                                    با كارستون مطمئن سرمايه گذاری كن
                                 </h1>
                                 <p className="wow fadeInLeft text-right" data-wow-delay="0.3s">
                                     کارستون یک شرکت غیرانتفاعی و مستقل است. این شرکت فعالیت خود را از سال 1398 آغاز
@@ -38,10 +39,9 @@ function MainPage() {
                             </div>
                         </div>
                         <div
-                            className="d-flex justify-content-center col-lg-6 col-md-8 col-sm-10 mx-auto wow fadeInRight"
-                            data-wow-delay="0.2s">
-                            <div className=" hero-img image-small fancy-bottom wow fadeInLeft" data-wow-delay="0.6s">
-                                <img src="http://localhost:3000/images/test.jpg" alt="Image"/>
+                            className="d-flex justify-content-center col-lg-6 col-md-8 col-sm-10 mx-auto wow fadeInRight">
+                            <div className="" data-wow-delay="0.6s">
+                                <img src={crowd} alt="Image"/>
                             </div>
                         </div>
                     </div>

@@ -1,8 +1,45 @@
 import React from 'react';
 import sbu from '../../../assets/img/sbu logo.jpg'
+import halal from "../../../assets/img/HalaFund.png"
+import Slider from "react-slick";
 /*import salam from '../../../../public/images/logo-barekat.png'*/
 function Partners() {
 
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        draggable: true,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
     return (
         <>
             <section className="partners-section section-gap section-border-bottom">
@@ -15,16 +52,23 @@ function Partners() {
                         <h2 className="title">مورد اعتماد برند های معروف</h2>
                     </div>
                     <div className="row partners-logos-one">
-                        <div className="col-lg-3 col-md-4 col-sm-6">
-                            <div className="logo mt-30 ">
-                                <a href="#" style={{textAlign:"center"}}><img src={sbu} style={{width:"50%"}} alt="Image"/></a>
+                        <Slider {...settings}>
+                            <div className="col-lg-3 col-md-4 col-sm-6">
+                                <div className="logo mt-30">
+                                    <a href="#" style={{textAlign:"center"}}><img src={sbu} style={{width:"10rem"}} alt="Image"/></a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6">
-                            <div className="logo mt-30">
-                                <a href="#"><img src='http://localhost:3000/images/logo-barekat.png'  alt="Image"/></a>
+                            <div className="col-lg-3 col-md-4 col-sm-6">
+                                <div className="logo mt-30">
+                                    <a href="#"><img src='http://localhost:3000/images/logo-barekat.png' style={{width:"15rem"}} alt="Image"/></a>
+                                </div>
                             </div>
-                        </div>
+                            <div className="col-lg-3 col-md-4 col-sm-6">
+                                <div className="logo mt-30">
+                                    <a href="#"><img src={halal}  style={{width:"10rem"}} alt="Image"/></a>
+                                </div>
+                            </div>
+                        </Slider>
                     </div>
                 </div>
             </section>

@@ -7,6 +7,7 @@ import Campaigns from "./Campaigns"
 import Footer from "./Footer";
 import Partners from "./Partners";
 import Counter from "./Counter";
+import Card from "./Card";
 
 function MainPage() {
 
@@ -14,7 +15,7 @@ function MainPage() {
         <>
             <Header/>
             <HeroArea/>
-            <Project/>
+            <Card/>
             <Campaigns/>
             <Counter/>
             <Partners/>
