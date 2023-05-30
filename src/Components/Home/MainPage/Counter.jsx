@@ -7,14 +7,16 @@ function Counter() {
     const [activeUsersCount, setActiveUsersCount] = useState(0)
     const [usersCount, setUsersCount] = useState(0);
     const [completeProjectsCount, setCompleteProjectsCount] = useState(0)
-    const getData = async () => {
-        const dataResponse = await api.get("project/report/footer")
-        setUsersCount(dataResponse.data.users)
-        setActiveUsersCount(dataResponse.data.activeUsers)
-        setCompleteProjectsCount(dataResponse.data.completeProjects)
-    }
+
+    // const getData = async () => {
+    //     const dataResponse = await api.get("project/report/footer")
+    //     setUsersCount(dataResponse.data.users)
+    //     setActiveUsersCount(dataResponse.data.activeUsers)
+    //     setCompleteProjectsCount(dataResponse.data.completeProjects)
+    // }
+
     useEffect(() => {
-        getData()
+
     }, []);
 
     return (

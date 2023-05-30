@@ -12,6 +12,7 @@ import './assets/css/slick.min.css'
 import "./style/index.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import * as ServiceWorker from './ServiceWorker';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -19,3 +20,5 @@ ReactDOM.render(
     </React.StrictMode>,
     document.getElementById('root'),
 );
+
+ServiceWorker.register();

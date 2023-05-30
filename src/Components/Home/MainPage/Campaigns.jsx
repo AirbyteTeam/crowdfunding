@@ -11,6 +11,8 @@ import api from "../../../api/api";
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import {numberSlicer} from "../../../helper/numberSlicer";
 import axios from "axios";
+import {SeparateNumber} from "../../../helper/SeparateNumber";
+import {EnglishToPersian} from "../../../helper/EnglishToPersian";
 
 function Campaigns() {
     const [isLiked, setIsLiked] = useState(false);
@@ -125,6 +127,7 @@ function Campaigns() {
             "title": "تامین سرمایه در گردش به منظور خرید مواد اولیه کامپاند سپری خودرو"
         }
     ]);
+
     const [countOfProject, setCountOfProject] = useState(0)
 
     const getHalalProject = async () =>{
@@ -223,32 +226,30 @@ function Campaigns() {
                                                                 <i className="far fa-calendar-alt" style={{color:"#dcdcdc"}}></i>
                                                                 <span className="value-title mx-2"> باقی مانده</span>
                                                             </div>
-                                                            <span className="value mx-2">{project.remainingTime}</span>
+                                                            <span className="value mx-2">{EnglishToPersian(project.remainingTime)}</span>
                                                         </div>
                                                         <div className="stats-value">
                                                             <div className="d-flex align-items-center">
                                                                 <BsCash color="#dcdcdc"/>
                                                                 <span className="value-title mx-2"> مبلغ مورد نياز</span>
                                                             </div>
-                                                            <span className="value">{project.totalPrice}<span className="text-white mx-1">ریال</span></span>
+                                                            <span className="value">{EnglishToPersian(project.totalPrice)}<span className="text-white mx-1">ریال</span></span>
                                                         </div>
                                                         <div className="stats-value">
                                                             <div className="d-flex align-items-center">
                                                                 <GiCash color="#dcdcdc"/>
                                                                 <span className="value-title mx-2"> مبلغ حمايت شده</span>
                                                             </div>
-                                                            <span className="value">{project.peopleDonate}<span className="text-white mx-1">ریال</span></span>
-
+                                                            <span className="value">{EnglishToPersian(SeparateNumber(project.peopleDonate.toString()))}<span className="text-white mx-1">ریال</span></span>
                                                         </div>
 
                                                         <div className="bar mt-4" data-value="">
                                                             <div className="d-flex justify-content-end">
                                                     <span style={{
                                                         fontSize: "1rem",
-                                                        color: "#fff"}}>{project.progress}%</span>
+                                                        color: "#fff"}}>{EnglishToPersian(project.progress.toString())}%</span>
                                                             </div>
-                                                            <ProgressBar style={{height: "0.3rem"}} variant="success"
-                                                                         now={project.progress}/>
+                                                            <ProgressBar style={{height: "0.7rem"}}  now={project.progress}/>
                                                         </div>
                                                     </div>
                                                     <div className="mt-5 d-flex justify-content-center">

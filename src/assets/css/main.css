@@ -541,8 +541,8 @@ a:hover {
     -webkit-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-    color: var(--white);
-    background-color: var(--primary-color);
+    color: #000000;
+    background: linear-gradient(90deg, rgba(78,184,1,1) 0%, rgba(172,222,1,1) 49%, rgba(103,194,1,1) 100%);
     padding: 1rem 5rem;
     border-radius: 1.2rem;
     position: relative;
@@ -555,7 +555,7 @@ a:hover {
 }
 
 .main-btn:hover {
-    background-color: var(--secondary-color);
+    background: #255900FF;
     color: var(--white);
     border-radius: 5px;
 }
@@ -1678,9 +1678,9 @@ a:hover {
     position: relative;
     z-index: 1;
     padding: 6.5rem 0;
-    background-image: url(../img/page-title.jpg);
+    background-image: url(../img/funding.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 .page-title-area::before {
@@ -2249,19 +2249,19 @@ a:hover {
             right top,
             right bottom,
             from(rgba(0, 29, 35, 0)),
-            color-stop(30%, rgba(0, 29, 35, 0.5)),
+            color-stop(30%, rgba(0, 29, 35, 0.75)),
             to(rgb(0, 29, 35))
     );
     background-image: -o-linear-gradient(
             top,
             rgba(0, 29, 35, 0) 0%,
-            rgba(0, 29, 35, 0.5) 30%,
+            rgba(0, 29, 35, 0.75) 30%,
             rgb(0, 29, 35) 100%
     );
     background-image: linear-gradient(
             -180deg,
             rgba(0, 29, 35, 0) 0%,
-            rgba(0, 29, 35, 0.5) 30%,
+            rgba(0, 29, 35, 0.75) 30%,
             rgb(0, 29, 35) 100%
     );
 }
@@ -2280,6 +2280,7 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    direction: rtl;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -5407,5 +5408,7 @@ a:hover {
     width: 4rem;
 }
 
-
+.progress-bar{
+    background-color: #4eb801 !important;
+}
 

@@ -138,7 +138,7 @@ function Header2() {
                                                 </MenuItem>
                                             </Menu>
                                         </> :
-                                        <Link to="/sign-in" className="main-btn nav-btn d-none d-sm-inline-block">
+                                        <Link to="/" className="main-btn nav-btn d-none d-sm-inline-block">
                                             ورود | ثبت نام <i className="far fa-arrow-left"></i>
                                         </Link>
                                 }
@@ -202,7 +202,7 @@ function Header2() {
                                 </Dropdown.Menu>
                             </Dropdown> :
                             <div className="panel-extra">
-                                <Link to="/sign-in" className="main-btn btn-white">
+                                <Link to="/" className="main-btn btn-white" disabled>
                                     ورود | ثبت نام <i className="far fa-arrow-left"></i>
                                 </Link>
                             </div>
