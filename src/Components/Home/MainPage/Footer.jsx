@@ -15,7 +15,7 @@ function MainPage() {
                                             <img  src={logo} alt="salam"/>
                                         </div>
                                         <p>
-                                            با کارستون همیشه در کنار شما...
+                                            کارستون همیشه در کنار شما...
                                         </p>
                                         {/*<div className="newsletter-form">
                                             <h5 className="form-title">عضویت در خبرنامه</h5>
@@ -59,7 +59,7 @@ function MainPage() {
                                                 <span className="icon"><i className="far fa-phone"></i></span>
                                                 <span className="info">
 											<span className="info-title">شماره تماس</span>
-											<a href="#">021-29905285</a>
+											<a href="#">021-2529364</a>
 										</span>
                                             </li>
                                             <li>
@@ -67,14 +67,14 @@ function MainPage() {
                                                 <span className="info">
 											<span className="info-title">ایمیل</span>
 											<a href="#"><span className="__cf_email__"
-                                                              data-cfemail="0f7c7a7f7f607d7b4f68626e6663216c6062">info@charity-salam.ir</span></a>
+                                                              data-cfemail="0f7c7a7f7f607d7b4f68626e6663216c6062">info@info.com</span></a>
 										</span>
                                             </li>
                                             <li>
                                                 <span className="icon"><i className="far fa-map-marker-alt"></i></span>
                                                 <span className="info">
 											<span className="info-title">آدرس</span>
-											<a href="#"> تهران - مرکز رشد و نوآوری دانشگاه شهید بهشتی</a>
+											<a href="#"> تهران - ولنجک</a>
 										</span>
                                             </li>
                                         </ul>

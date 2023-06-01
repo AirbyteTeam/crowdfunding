@@ -318,21 +318,14 @@ function ListOfProject() {
     }
 
     const getProjects = async () => {
-        const projectsResponse = await api.get("project")
-        setProjects(projectsResponse.data)
-        let profileUrls = []
-        for (let i = 0; i < projectsResponse.data.length; i++) {
-            const getProfileResponse = await api.get(`file/${projectsResponse.data[i].profileId}`, {responseType: 'blob'}).then(response => response.data)
-                .then((data) => {
-                    profileUrls.push(URL.createObjectURL(data));
-                })
-        }
-        setProfileList([...profileUrls])
+        const respond = await axios.post(`https://halalfund.ir/api/v1/fetchVerifiedProject?page=1&per_page=12`)
+        setProjects(respond.data.items)
+        lastPage = respond.data.last_page;
+        setPage(1)
     }
 
     useEffect(() => {
-        halalProject(1)
-        // getProjects()
+        getProjects();
     }, []);
 
     function toggleLikeBtn() {
@@ -342,6 +335,7 @@ function ListOfProject() {
             setIsLiked(true)
         }
     }
+
 
     const cacheRtl = createCache({
         key: 'muirtl',

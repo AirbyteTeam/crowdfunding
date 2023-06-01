@@ -27,60 +27,60 @@ function Counter() {
                         <div className="col-xl-auto col-lg-5 col-md-5 col-sm-6">
                             <div className="counter-box mb-40 icon-left">
                                 <div className="icon white-color">
-                                    <i className="flaticon-crowdfunding"></i>
+                                    <i className="flaticon-crowdfunding text-black"></i>
                                 </div>
                                 <div className="content white-color">
-                                    <div className="count-wrap">
-                                        <CountUp end={completeProjectsCount} redraw={true}>
+                                    <div className="count-wrap text-black">
+                                        <CountUp end={20} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span className="count" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
-                                        <span className="suffix">+</span>
+                                        <span className="suffix text-black">+</span>
                                     </div>
-                                    <h6 className="title">پروژه های تکمیل شده</h6>
+                                    <h6 className="title text-black">پروژه های تکمیل شده</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-auto col-lg-5 col-md-5 col-sm-6">
+                            <div className="counter-box mb-40 icon-left ">
+                                <div className="icon white-color">
+                                    <i className="flaticon-crowdfunding text-black"></i>
+                                </div>
+                                <div className="content white-color">
+                                    <div className="count-wrap text-black">
+                                        <CountUp end={1} redraw={true}>
+                                            {({ countUpRef, start }) => (
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <span className="count" ref={countUpRef} />
+                                                </VisibilitySensor>
+                                            )}
+                                        </CountUp>
+                                        <span className="suffix text-black">+</span>
+                                    </div>
+                                    <h6 className="title text-black">حامیان</h6>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xl-auto col-lg-5 col-md-5 col-sm-6">
                             <div className="counter-box mb-40 icon-left">
                                 <div className="icon white-color">
-                                    <i className="flaticon-crowdfunding"></i>
+                                    <i className="flaticon-crowdfunding text-black"></i>
                                 </div>
                                 <div className="content white-color">
-                                    <div className="count-wrap">
-                                        <CountUp end={usersCount} redraw={true}>
+                                    <div className="count-wrap text-black">
+                                        <CountUp end={100} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span className="count" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
-                                        <span className="suffix">+</span>
+                                        <span className="suffix text-black">+</span>
                                     </div>
-                                    <h6 className="title">حامیان</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-auto col-lg-5 col-md-5 col-sm-6">
-                            <div className="counter-box mb-40 icon-left">
-                                <div className="icon white-color">
-                                    <i className="flaticon-crowdfunding"></i>
-                                </div>
-                                <div className="content white-color">
-                                    <div className="count-wrap">
-                                        <CountUp end={activeUsersCount} redraw={true}>
-                                            {({ countUpRef, start }) => (
-                                                <VisibilitySensor onChange={start} delayedCall>
-                                                    <span className="count" ref={countUpRef} />
-                                                </VisibilitySensor>
-                                            )}
-                                        </CountUp>
-                                        <span className="suffix">+</span>
-                                    </div>
-                                    <h6 className="title">کمک کننده فعال</h6>
+                                    <h6 className="title text-black">کمک کننده فعال</h6>
                                 </div>
                             </div>
                         </div>

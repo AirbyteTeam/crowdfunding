@@ -34,9 +34,8 @@ function Details() {
                                             </div>
                                             <div className="info-content">
                                                 <h5 style={{fontWeight: "600"}}>آدرس ما</h5>
-                                                <p style={{fontSize: "0.8rem"}}>
-                                                    تهران – ولنجک میدان شهید شهریاری – دانشگاه شهید بهشتی – مرکز رشد و
-                                                    نوآوری
+                                                <p style={{fontSize: "0.9rem"}}>
+                                                    تهران – ولنجک
                                                 </p>
                                             </div>
                                         </div>
@@ -48,7 +47,7 @@ function Details() {
                                             <div className="info-content">
                                                 <h5>ایمیل</h5>
                                                 <p>
-                                                    <a style={{color: "#000"}} href="#">info@charity-salam.ir</a> <br/>
+                                                    <a style={{color: "#000"}} href="#">info@info.com</a> <br/>
                                                 </p>
                                             </div>
                                         </div>
@@ -61,7 +60,7 @@ function Details() {
                                             <div className="info-content">
                                                 <h5>پشتیبانی</h5>
                                                 <p>
-                                                    021-29905285
+                                                    021-29999999
                                                 </p>
                                             </div>
                                         </div>
