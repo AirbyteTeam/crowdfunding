@@ -132,10 +132,7 @@ function Campaigns() {
 
     const getHalalProject = async () =>{
         const respond = await axios.post(`https://halalfund.ir/api/v1/fetchVerifiedProject?page=1&per_page=6`)
-        console.log(respond);
-        console.log(respond.data)
-        console.log(respond.data.items)
-        setProfileList(respond.data.items)
+        setProfileList(respond.data.data.items)
     }
 
     const getProjects = async () => {

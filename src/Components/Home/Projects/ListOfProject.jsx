@@ -313,14 +313,14 @@ function ListOfProject() {
 
     const halalProject = async (page) => {
         const respond = await axios.post(`https://halalfund.ir/api/v1/fetchVerifiedProject?page=${page}&per_page=12`)
-        setProjects(respond.data.items)
+        setProjects(respond.data.data.items)
         setPage(page)
     }
 
     const getProjects = async () => {
         const respond = await axios.post(`https://halalfund.ir/api/v1/fetchVerifiedProject?page=1&per_page=12`)
-        setProjects(respond.data.items)
-        lastPage = respond.data.last_page;
+        setProjects(respond.data.data.items)
+        lastPage = respond.data.data.last_page;
         setPage(1)
     }
 
