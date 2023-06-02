@@ -17,116 +17,7 @@ import {EnglishToPersian} from "../../../helper/EnglishToPersian";
 function Campaigns() {
     const [isLiked, setIsLiked] = useState(false);
     const [projects, setProjects] = useState([]);
-    const [profileList, setProfileList] = useState([
-        {
-            "id": "eyJpdiI6Im1Qc3ZhN2g5OUxLVENrbkJWREZwdWc9PSIsInZhbHVlIjoiQUJSSjlFNVFQMzNZdUU3M3BXSGMydz09IiwibWFjIjoiZTdlYTZiNzRjYjNlYmFkZTRjOTUyNjAxYmU0YzU5ZjQ4MWUxMmI0YTA5YzZjMmVkZTk1N2RlNjhjODQ2NjQ4ZCJ9",
-            "code": "101100025",
-            "categories": [
-                [
-                    {
-                        "name": "گواهی شراکت"
-                    }
-                ]
-            ],
-            "totalPrice": "27,800,000,000",
-            "thumb_picture": "/ProjectFiles/2023/5/24//cropped-_24eddd3d-6745-4ed6-a20d-aa32e3549239.jpg",
-            "peopleSupported": 151,
-            "peopleDonate": 27800000000,
-            "progress": 100,
-            "remainingTime": "3 هفته ",
-            "title": "مشارکت در پروژه ارتقا زیرساخت فناوری و بهینه‌سازی خدمات تشخیص و درمان طبی آزمایشگاه ها مرحله سوم"
-        },
-        {
-            "id": "eyJpdiI6ImxFQ1BMMUtwbGtYcUxCTlQ4ZktcLzhBPT0iLCJ2YWx1ZSI6InZQd0VjSVhhWUVuZ1NwQlVZWGJhZkE9PSIsIm1hYyI6IjA4N2IyZjYyYTlkOGI0YTE2YTQ4ZDExYjIzYTQwZjFhNTIzY2QwOTllNjljNWE4OTRhNzg1MDhkMDJjYTQ2NDYifQ==",
-            "code": "101100027",
-            "categories": [
-                [
-                    {
-                        "name": "گواهی شراکت"
-                    }
-                ]
-            ],
-            "totalPrice": "112,000,000,000",
-            "thumb_picture": "/ProjectFiles/2023/5/23//cropped-Airplaneproduct1.jpg",
-            "peopleSupported": 72,
-            "peopleDonate": 112000000000,
-            "progress": 100,
-            "remainingTime": "3 هفته ",
-            "title": "تامین سرمایه جهت خرید 2 دستگاه موتور هواپیما برای شرکت هواپیمایی تابان"
-        },
-        {
-            "id": "eyJpdiI6InUxRUlMNGhMcHpSdGc2S2R0NGdHOWc9PSIsInZhbHVlIjoibGtJZmM4YUV2STNpeVwvSVJLdjlaVlE9PSIsIm1hYyI6ImEwYjg0MjBkNjExZWY0YjgwMDdlODlhYThhYTE0OWNlYTI4ODM4N2E1N2FkMmY0YjRjN2Q4ZWQ1MTZmYTliOGQifQ==",
-            "code": "101100029",
-            "categories": [
-                [
-                    {
-                        "name": "گواهی شراکت"
-                    }
-                ]
-            ],
-            "totalPrice": "112,000,000,000",
-            "thumb_picture": "/ProjectFiles/2023/5/24//cropped-_65aca8d2-68ca-44d2-8ec9-fd3e20510f09.jpg",
-            "peopleSupported": 10,
-            "peopleDonate": 112000000000,
-            "progress": 100,
-            "remainingTime": "3 هفته ",
-            "title": "تامین سرمایه در گردش به منظور خرید لوازم یدکی دستگاه‌های فلومتر آلتراسونیک"
-        },
-        {
-            "id": "eyJpdiI6Im1MXC92bjBzclRjSWZKZDBuR1k0XC96QT09IiwidmFsdWUiOiI2SVZmdnB1VUI0eElNazdBUnRuQmlBPT0iLCJtYWMiOiIzNjI1YzFjNTI5NTgyNWEyNDcxNzhiMGU0YWIwZWNkZDYyMGY5ZjViOGY4Zjg4NWU3ODYwOWMyYjQ3ZTIxNzcwIn0=",
-            "code": "101100028",
-            "categories": [
-                [
-                    {
-                        "name": "گواهی شراکت"
-                    }
-                ]
-            ],
-            "totalPrice": "37,000,000,000",
-            "thumb_picture": "/ProjectFiles/2023/5/24//cropped-_6792f4c5-4e05-4159-996c-22678d5b18a6.jpg",
-            "peopleSupported": 142,
-            "peopleDonate": 37000000000,
-            "progress": 100,
-            "remainingTime": "3 هفته ",
-            "title": "تامین سرمایه در گردش به منظور خرید قطعات ذخیره ساز"
-        },
-        {
-            "id": "eyJpdiI6ImhkTWZvOHpETUxnN2ZWcml4R0luclE9PSIsInZhbHVlIjoiNGZNdDJTcGgySHZLZkQ1cW84bE1Rdz09IiwibWFjIjoiMWQwMjc0ZDM2MjkyY2M4NTAxN2FhZGFkNWNlNmRjODg0ODRhY2Q2YWVhMGM5ZjYzOWM3NzlhZGYxNWNmZGNhZCJ9",
-            "code": "101100030",
-            "categories": [
-                [
-                    {
-                        "name": "گواهی شراکت"
-                    }
-                ]
-            ],
-            "totalPrice": "27,800,000,000",
-            "thumb_picture": "/ProjectFiles/2023/5/24//cropped-_92858b7f-3df9-4444-87cd-9535717b5d24.jpg",
-            "peopleSupported": 206,
-            "peopleDonate": 27800000000,
-            "progress": 100,
-            "remainingTime": "3 هفته ",
-            "title": "تامین سرمایه ‌در گردش جهت اجرای عملیات ابنیه پروژه مجتمع رفاهی مشهد"
-        },
-        {
-            "id": "eyJpdiI6Im50akJUWDB3c1NhbzZZK1h5M2lkVmc9PSIsInZhbHVlIjoicGpSQ1ljSWpWblQrYXllOVwvQU1XaUE9PSIsIm1hYyI6ImZjNmQzMzdmOTJmNWI2MTYxMjJjNjNkYjc3OTM4YmRiN2FjYTFkNGQ1NWY3NWJmY2E1YTBkZDUxOTNjZDFlMDcifQ==",
-            "code": "102100031",
-            "categories": [
-                [
-                    {
-                        "name": "گواهی شراکت"
-                    }
-                ]
-            ],
-            "totalPrice": "16,500,000,000",
-            "thumb_picture": "/ProjectFiles/2023/5/24//cropped-_c05481da-e854-40f7-955f-8795fa6b6184.jpg",
-            "peopleSupported": 4,
-            "peopleDonate": 16500000000,
-            "progress": 100,
-            "remainingTime": "3 هفته ",
-            "title": "تامین سرمایه در گردش به منظور خرید مواد اولیه کامپاند سپری خودرو"
-        }
-    ]);
+    const [profileList, setProfileList] = useState([]);
 
     const [countOfProject, setCountOfProject] = useState(0)
 
@@ -253,7 +144,7 @@ function Campaigns() {
                                                         </div>
                                                     </div>
                                                     <div className="mt-5 d-flex justify-content-center">
-                                                        <a href="" className={"main-btn"}>حمايت ميكنم</a>
+                                                        <a target="_blank" href={`https://halalfund.ir/projectDetail/${project.code}`} className={"main-btn"}>حمايت ميكنم</a>
                                                     </div>
                                                     <div className="mt-4  d-flex justify-content-between">
                                                     </div>
