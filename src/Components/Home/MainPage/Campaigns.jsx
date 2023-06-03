@@ -54,7 +54,7 @@ function Campaigns() {
         infinite: true,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         draggable: true,
         autoplay: true,
         arrows: false,
@@ -91,62 +91,54 @@ function Campaigns() {
             <section className="emergency-project-with-cta">
                 <div className="emergency-project-slider">
                     <div className="container">
-                        <div className="common-heading text-center mb-60">
+                        <div className="common-heading text-center mb-20">
 					<span className="tagline">
 						<i className="fas fa-plus"></i>پروژه های محبوب
 						<span className="heading-shadow-text">پروژه های ما</span>
 					</span>
                             <h2 className="title">پروژه های ما را کاوش کنید</h2>
                         </div>
-                        <div className="row project-items project-style-three justify-content-center">
+                        <div className="row justify-content-center">
                             <Slider {...settings}>
                                 {
                                     profileList.map((project, index) =>
-                                        <div className="col-lg-6 col-sm-10 px-4">
-                                            <div className="project-item">
-                                                <div className={"thumb"}>
-                                                    <img className={"thumb"} style={{borderRadius: "1rem"}} src={`https://halalfund.ir${project.thumb_picture}`} alt=""/>
+                                        <div className="px-4" >
+                                            <div className="bg-white flex flex-col sm:flex-row rounded-2xl">
+                                                <div className="w-full sm:w-[65%]">
+                                                    <img className=" rounded-tl-2xl rounded-tr-2xl sm:rounded-tl-2xl sm:rounded-bl-2xl object-cover w-full h-72 sm:h-full"
+                                                         src={`https://halalfund.ir${project.thumb_picture}`}
+                                                         alt="project"/>
                                                 </div>
-                                                <div className="content">
-                                                    <div className="cats">
-                                                        <a href="" style={{backgroundColor: "rgb(2 36 21 / 64%)",fontSize:"1.1rem",lineHeight:"2"}}>{project.title}</a>
+                                                <div className="p-4" style={{direction:"rtl"}}>
+                                                    <div className="font-bold text-[1.1rem]">
+                                                        <a href={`https://halalfund.ir/projectDetail/${project.code}`}>{project.title}</a>
                                                     </div>
-                                                    <div className="project-stats">
-                                                        <div className="stats-value">
-                                                            <div className="d-flex align-items-center">
-                                                                <i className="far fa-calendar-alt" style={{color:"#dcdcdc"}}></i>
-                                                                <span className="value-title mx-2"> باقی مانده</span>
-                                                            </div>
-                                                            <span className="value mx-2">{EnglishToPersian(project.remainingTime)}</span>
+                                                    <div className="flex flex-col sm:flex-row justify-around mt-4">
+                                                        <div className="flex flex-col items-center my-1 sm:my-0">
+                                                            <i className="far fa-calendar-alt text-[1.7rem] text-[#4eb801]" ></i>
+                                                            <span className="mt-1 text-neutral-700 text-[0.9rem]"> باقی مانده</span>
+                                                            <span className="mt-1 text-black font-bold text-[0.9rem]">{EnglishToPersian(project.remainingTime)}</span>
                                                         </div>
-                                                        <div className="stats-value">
-                                                            <div className="d-flex align-items-center">
-                                                                <BsCash color="#dcdcdc"/>
-                                                                <span className="value-title mx-2"> مبلغ مورد نياز</span>
-                                                            </div>
-                                                            <span className="value">{EnglishToPersian(project.totalPrice)}<span className="text-white mx-1">ریال</span></span>
+                                                        <div className="flex flex-col items-center my-1 sm:my-0">
+                                                            <BsCash fontSize="1.7rem" color="#4eb801"/>
+                                                            <span className="mt-1 text-neutral-700 text-[0.9rem]"> مبلغ مورد نياز</span>
+                                                            <span className="mt-1 text-black font-bold text-[0.9rem]">{EnglishToPersian(project.totalPrice)}<span className="mx-1">ریال</span></span>
                                                         </div>
-                                                        <div className="stats-value">
-                                                            <div className="d-flex align-items-center">
-                                                                <GiCash color="#dcdcdc"/>
-                                                                <span className="value-title mx-2"> مبلغ حمايت شده</span>
-                                                            </div>
-                                                            <span className="value">{EnglishToPersian(SeparateNumber(project.peopleDonate.toString()))}<span className="text-white mx-1">ریال</span></span>
-                                                        </div>
-
-                                                        <div className="bar mt-4" data-value="">
-                                                            <div className="d-flex justify-content-end">
-                                                    <span style={{
-                                                        fontSize: "1rem",
-                                                        color: "#fff"}}>{EnglishToPersian(project.progress.toString())}%</span>
-                                                            </div>
-                                                            <ProgressBar style={{height: "0.7rem"}}  now={project.progress}/>
+                                                        <div className="flex flex-col items-center my-1 sm:my-0">
+                                                            <GiCash fontSize="1.7rem" color="#4eb801"/>
+                                                            <span className="mt-1 text-neutral-700 text-[0.9rem]"> مبلغ حمايت شده</span>
+                                                            <span className="mt-1 text-black font-bold text-[0.9rem]">{EnglishToPersian(SeparateNumber(project.peopleDonate.toString()))}<span className="mx-1">ریال</span></span>
                                                         </div>
                                                     </div>
-                                                    <div className="mt-5 d-flex justify-content-center">
-                                                        <a target="_blank" href={`https://halalfund.ir/projectDetail/${project.code}`} className={"main-btn"}>حمايت ميكنم</a>
+                                                    <div className="mt-4">
+                                                        <div className="d-flex justify-content-end">
+                                                            <span>{EnglishToPersian(project.progress.toString())}%</span>
+                                                        </div>
+                                                        <ProgressBar style={{height: "0.7rem"}} now={project.progress}/>
                                                     </div>
-                                                    <div className="mt-4  d-flex justify-content-between">
+                                                    <div className="mt-4 d-flex justify-content-center">
+                                                        <a href={`https://halalfund.ir/projectDetail/${project.code}`} target="_blank" className={"main-btn"}
+                                                           style={{padding: "0.8rem 5rem"}}>حمايت ميكنم</a>
                                                     </div>
                                                 </div>
                                             </div>

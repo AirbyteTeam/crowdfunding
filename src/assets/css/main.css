@@ -1409,12 +1409,12 @@ a:hover {
 }
 
 .footer-widgets .widget.contact-widget li .info {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .footer-widgets .widget.contact-widget li .info-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #999ca5;
     display: block;
     margin-bottom: 2px;
@@ -5394,9 +5394,7 @@ a:hover {
 .card-container .card{
     border:none;
     border-radius: 2rem;
-    padding: 1.5rem;
-    width: 25%;
-    background-color: #fff;
+    padding: 2rem;
     box-shadow: 0 0 20px 0 #00000047;
 }
 .card-container .card h2{

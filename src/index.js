@@ -12,7 +12,7 @@ import './assets/css/slick.min.css'
 import "./style/index.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../src/index.css";
+import "./index.css"
 
 import * as ServiceWorker from './ServiceWorker';
 

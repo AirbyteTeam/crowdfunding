@@ -17,7 +17,7 @@ import OTP from "./Components/Signup/OTP"
 import EnterPassword from "./Components/Signup/EnterPassword"
 import ResetPassword from "./Components/Signup/ResetPassword"
 import EditCrowdFunding from "./Components/Dashboard Admin/Pages/EditCrowdFunding"
-import ProjectDetails from "./Components/Home/projectDetails/projectDetails";
+import ProjectDetails from "./Components/Home/ProjectDetails/ProjectDetails";
 import Contact from "./Components/Home/Contact/Contact";
 import Project from "./Components/Home/Projects/Project";
 import MainManagerPage from "./Components/Dashboard Manager/Pages/main";

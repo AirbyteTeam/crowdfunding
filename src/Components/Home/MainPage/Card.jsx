@@ -6,18 +6,17 @@ function Card() {
     return (
         <>
             <div className="d-flex justify-content-center mt-5">
-                <div className="card-container d-flex justify-content-around">
-                    <div className="card text-center gradient-bg">
+                <div className="card-container flex justify-center items-center sm:justify-around flex-col sm:flex-row">
+                    <div className="card w-full my-2 sm:my-0 sm:w-1/2 mx-2 text-center gradient-bg">
                         <div className="d-flex justify-content-center"><img src={ligal} alt=""/></div>
                         <h2>بلا عوض</h2>
                     </div>
-
-                    <div className="card text-center gradient-bg">
+                    <div className="card w-full my-2 sm:my-0 sm:w-1/2 mx-2 text-center gradient-bg">
                         <div className="d-flex justify-content-center"><img src={warranty} alt=""/></div>
                         <h2>قرض الحسنه</h2>
                     </div>
 
-                    <div className="card text-center gradient-bg">
+                    <div className="card w-full my-2 sm:my-0 sm:w-1/2 mx-2 text-center gradient-bg">
                         <div className="d-flex justify-content-center"><img src={profit} alt=""/></div>
                         <h2>سود آور</h2>
                     </div>

@@ -51,8 +51,8 @@ function MainPage() {
                                         </ul>
                                     </div>
                                 </div>*/}
-                                <div className="col-lg-auto col-md-5 col-sm-8">
-                                    <div className="widget contact-widget">
+                                <div className="col-lg-5 col-md-5 col-sm-8">
+                                    <div className="widget contact-widget w-full">
                                         <h4 className="widget-title">تماس با ما</h4>
                                         <ul className="info-list">
                                             <li>

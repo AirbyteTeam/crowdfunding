@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Header2 from "../MainPage/Header2";
 import Title from "../CommenPage/Title";
 import Details from "./Details";
@@ -8,7 +8,7 @@ import {useParams} from "react-router-dom";
 
 
 
-function projectDetails() {
+function ProjectDetails() {
     const [reports, setReports] = useState([]);
     const [profileList, setProfileList] = useState([]);
     const [comments, setComments] = useState([]);
@@ -47,9 +47,7 @@ function projectDetails() {
             profileId: URL.createObjectURL(getProfileId.data)
         })
     }
-    useEffect(() => {
-        getProject()
-    }, []);
+
 
     return (
         <>
@@ -61,4 +59,4 @@ function projectDetails() {
     );
 }
 
-export default projectDetails
+export default ProjectDetails
