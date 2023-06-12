@@ -15,7 +15,7 @@ function MainPage() {
                                             <img  src={logo} alt="salam"/>
                                         </div>
                                         <p>
-                                            کارستون همیشه در کنار شما...
+                                            قطره قطره جمع گردد وانگهی دریا شود...
                                         </p>
                                         {/*<div className="newsletter-form">
                                             <h5 className="form-title">عضویت در خبرنامه</h5>

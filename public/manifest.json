@@ -19,7 +19,7 @@
     }
   ],
 
-  "start_url": "http://kaareston.com",
+  "start_url": "https://kaareston.com",
   "display": "standalone",
   "theme_color": "#4eb801",
   "background_color": "#ffffff"

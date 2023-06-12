@@ -57,7 +57,7 @@ function Header() {
                                         <NavLink end to="/" activeClassName='active'>خـانـه</NavLink>
                                     </li>
                                     <li>
-                                        <a href="#">معرفي کارستون</a>
+                                        <NavLink  to="/about-us" activeClassName='active'>معرفی کارستون</NavLink>
                                     </li>
                                     <li>
                                         <NavLink  to="/projects" activeClassName='active'>پـروژه ها</NavLink>
@@ -159,7 +159,7 @@ function Header() {
                             <NavLink end to="/" activeClassName='active'>خـانـه</NavLink>
                         </li>
                         <li>
-                            <a href="#">معرفي کارستون</a>
+                            <NavLink  to="/about-us" activeClassName='active'>معرفی کارستون</NavLink>
                         </li>
                         <li>
                             <NavLink  to="/projects" activeClassName='active'>پـروژه ها</NavLink>

@@ -25,6 +25,7 @@ import DashboardManager from "./Components/Dashboard Manager/Template/master";
 import Admins from "./Components/Dashboard Manager/Template/master";
 import ProtectedLogin from "./Components/ProtectedLogin";
 import ProtectedRoute from "./Components/protectedRoute";
+import AboutUs from "./Components/Home/AboutUs/AboutUs";
 
 function App() {
     window.onbeforeunload = function() {
@@ -57,6 +58,7 @@ function App() {
                     <Route exact path="/enter-password" element={(<ProtectedLogin><EnterPassword/></ProtectedLogin>)}/>
                     <Route exact path="/reset-password" element={(<ProtectedLogin><ResetPassword/></ProtectedLogin>)}/>
                     <Route exact path="/projects" element={(<Project/>)}/>
+                    <Route exact path="/about-us" element={(<AboutUs/>)}/>
                     <Route exact path="/project-details/:id" element={(<ProjectDetails/>)}/>
                     <Route exact path="/contact-us" element={(<Contact/>)}/>
                 </Routes>
