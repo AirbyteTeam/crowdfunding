@@ -1,4 +1,5 @@
 import React from 'react';
+import {EnglishToPersian} from "../../../helper/EnglishToPersian";
 
 function Details() {
 
@@ -35,7 +36,7 @@ function Details() {
                                             <div className="info-content">
                                                 <h5 style={{fontWeight: "600"}}>آدرس ما</h5>
                                                 <p style={{fontSize: "0.9rem"}}>
-                                                    تهران – ولنجک
+                                                    تهران، ولنجک، میدان شهید شهریاری، دانشگاه شهید بهشتی، ساختمان پارک علم و فناوری
                                                 </p>
                                             </div>
                                         </div>
@@ -47,7 +48,7 @@ function Details() {
                                             <div className="info-content">
                                                 <h5>ایمیل</h5>
                                                 <p>
-                                                    <a style={{color: "#000"}} href="#">info@info.com</a> <br/>
+                                                    <a style={{color: "#000"}} href="#">kaareston.1402@gmail.com</a> <br/>
                                                 </p>
                                             </div>
                                         </div>
@@ -60,7 +61,7 @@ function Details() {
                                             <div className="info-content">
                                                 <h5>پشتیبانی</h5>
                                                 <p>
-                                                    021-29999999
+                                                    {EnglishToPersian("021-29902931")}
                                                 </p>
                                             </div>
                                         </div>

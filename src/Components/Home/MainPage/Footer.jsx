@@ -59,7 +59,7 @@ function MainPage() {
                                                 <span className="icon"><i className="far fa-phone"></i></span>
                                                 <span className="info">
 											<span className="info-title">شماره تماس</span>
-											<a href="#">021-2529364</a>
+											<a href="#">021-29902931</a>
 										</span>
                                             </li>
                                             <li>
@@ -67,14 +67,14 @@ function MainPage() {
                                                 <span className="info">
 											<span className="info-title">ایمیل</span>
 											<a href="#"><span className="__cf_email__"
-                                                              data-cfemail="0f7c7a7f7f607d7b4f68626e6663216c6062">info@info.com</span></a>
+                                                              data-cfemail="0f7c7a7f7f607d7b4f68626e6663216c6062">kaareston.1402@gmail.com</span></a>
 										</span>
                                             </li>
                                             <li>
                                                 <span className="icon"><i className="far fa-map-marker-alt"></i></span>
                                                 <span className="info">
 											<span className="info-title">آدرس</span>
-											<a href="#"> تهران - ولنجک</a>
+											<a href="#"> تهران - دانشگاه شهید بهشتی</a>
 										</span>
                                             </li>
                                         </ul>
