@@ -49,7 +49,7 @@ function Header2() {
                     <div className="container">
                         <div className="navbar-inner">
                             <div className="site-logo">
-                                <Link to="/"><img src={logo} alt="Funden"/></Link>
+                                <Link to="/"><img src={"https://cloud.tala24.co/kareston-images/1_FINAL_EDITED.png"} alt="Funden"/></Link>
                             </div>
                             <div className="nav-menu">
                                 <ul>
@@ -151,7 +151,7 @@ function Header2() {
                 </div>
                 <div className={isOpen ? "mobile-menu-panel panel-opened" : "mobile-menu-panel"}>
                     <div className="panel-logo">
-                        <Link to="/"><img src={logoWhite} alt="Funden"/></Link>
+                        <Link to="/"><img src={"https://cloud.tala24.co/kareston-images/1-EDITED_Footer.png"} alt="Funden"/></Link>
                     </div>
                     <ul className="panel-menu">
                         <li>

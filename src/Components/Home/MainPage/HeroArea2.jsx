@@ -26,23 +26,23 @@ function HeroArea2() {
                     </div>
                     <div className="hero-shapes">
                         <div className="hero-line-one">
-                            <img src={heroLine1} alt="Line"/>
+                            <img src={"https://cloud.tala24.co/kareston-images/hero/hero-line.png"} alt="Line"/>
                         </div>
                         <div className="hero-line-two">
-                            <img src={heroLine2} alt="Line"/>
+                            <img src={"https://cloud.tala24.co/kareston-images/hero/hero-line-2.png"} alt="Line"/>
                         </div>
                         <div className="dot-one"></div>
                         <div className="dot-two"></div>
                     </div>
                 </div>
                 <div className="hero-images">
-                    <div className="hero-img image-small fancy-bottom wow fadeInLeft" data-wow-delay="0.6s">
+                    <div className="hero-img image-small fancy-bottom wow fadeInLeft" >
                         <img src={img1} alt="Image"/>
                     </div>
-                    <div className="hero-img main-img wow fadeInUp" data-wow-delay="0.5s">
+                    <div className="hero-img main-img wow fadeInUp">
                         <img src={img2} alt="Image"/>
                     </div>
-                    <div className="hero-img image-small fancy-top wow fadeInRight" data-wow-delay="0.7s">
+                    <div className="hero-img image-small fancy-top wow fadeInRight" >
                         <img src={img3} alt="Image"/>
                     </div>
                 </div>

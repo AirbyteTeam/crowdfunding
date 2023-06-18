@@ -6,7 +6,6 @@ import crowd from "../../../assets/img/crodfinding.png"
 import {Link} from "react-router-dom";
 
 function MainPage() {
-
     return (
         <>
             <section className="hero-area-two">
@@ -38,17 +37,17 @@ function MainPage() {
                         <div
                             className="d-flex justify-content-center col-lg-6 col-md-8 col-sm-10 mx-auto wow fadeInRight">
                             <div className="" data-wow-delay="0.6s">
-                                <img src={crowd} alt="Image"/>
+                                <img src={"https://cloud.tala24.co/kareston-images/crodfinding.png"} alt="Image"/>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="hero-shapes">
                     <div className="hero-line-one">
-                        <img src={heroLine2} alt="Line"/>
+                        <img src={"https://cloud.tala24.co/kareston-images/hero/hero-line.png"} alt="Line"/>
                     </div>
                     <div className="hero-line-two">
-                        <img src={heroLine2} alt="Line"/>
+                        <img src={"https://cloud.tala24.co/kareston-images/hero/hero-line-2.png"} alt="Line"/>
                     </div>
                     <div className="dot-one"></div>
                     <div className="dot-two"></div>

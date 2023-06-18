@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../../../assets/img/1_FINAL_EDITED.png"
 import {Link} from "react-router-dom"
 import {UilTimes, UilUserPlus} from '@iconscout/react-unicons'
 
@@ -18,7 +17,7 @@ function Sidebar() {
                     بستن
                 </div>
                 <div className="logo">
-                    <img src={Logo}/>
+                    <img src={"https://cloud.tala24.co/kareston-images/1_FINAL_EDITED.png"}/>
                 </div>
                 <div className="sidebar-list mt-4">
                     <Link to="/manager/admins" className='w-100'>

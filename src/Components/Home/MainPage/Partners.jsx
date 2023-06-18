@@ -55,17 +55,27 @@ function Partners() {
                         <Slider {...settings}>
                             <div className="col-lg-3 col-md-4 col-sm-6">
                                 <div className="logo mt-30">
-                                    <a href="#" style={{textAlign:"center"}}><img src={sbu} style={{width:"10rem"}} alt="Image"/></a>
+                                    <a href="#" style={{textAlign:"center"}}><img src={"https://cloud.tala24.co/kareston-images/sbu logo.jpg"} style={{width:"10rem"}} alt="Image"/></a>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
                                 <div className="logo mt-30">
-                                    <a href="#"><img src='http://localhost:3000/images/logo-barekat.png' style={{width:"15rem"}} alt="Image"/></a>
+                                    <a href="#"><img src='https://cloud.tala24.co/kareston-images/logo-barekat.png' style={{width:"15rem"}} alt="Image"/></a>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-6">
                                 <div className="logo mt-30">
-                                    <a href="#"><img src={halal}  style={{width:"10rem"}} alt="Image"/></a>
+                                    <a href="#"><img src={"https://cloud.tala24.co/kareston-images/HalaFund.png"}  style={{width:"10rem"}} alt="Image"/></a>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-sm-6">
+                                <div className="logo mt-30">
+                                    <a href="#"><img src={"https://cloud.tala24.co/kareston-images/dongi.jpg"}  style={{width:"10rem"}} alt="Image"/></a>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-4 col-sm-6">
+                                <div className="logo mt-30">
+                                    <a href="#"><img src={"https://cloud.tala24.co/kareston-images/mehrabane.jpg"}  style={{width:"10rem"}} alt="Image"/></a>
                                 </div>
                             </div>
                         </Slider>

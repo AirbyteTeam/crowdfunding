@@ -13,8 +13,6 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Image from "./../../../assets/img/SignUp/login.jpg"
 import "../../../style/dashboard/Admin/createCrowdFounding.css"
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
@@ -282,7 +280,7 @@ export default function EditCrowdFunding() {
                                                     </AccordionSummary>
                                                     <AccordionDetails>
                                                         <Typography>{r.description}</Typography>
-                                                        <img className='report-box-image' src={Image} />
+                                                        <img className='report-box-image' src={"https://cloud.tala24.co/kareston-images/SignUp/login.jpg"} />
                                                     </AccordionDetails>
                                                 </Accordion>
                                             ))

@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom"
-import Logo from "./../../../assets/img/1_FINAL_EDITED.png"
 import {
     UilUser,
     UilEnvelopeQuestion,
@@ -23,7 +22,7 @@ function Sidebar() {
                     بستن
                 </div>
                 <div className="logo">
-                    <img src={Logo}/>
+                    <img src={"https://cloud.tala24.co/kareston-images/1_FINAL_EDITED.png"}/>
                 </div>
                 <div className="sidebar-list mt-4">
                     <Link to="/" className='w-100'>

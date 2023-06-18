@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from "../../../assets/img/1-EDITED_Footer.png"
+
+
 function MainPage() {
 
     return (
@@ -12,7 +13,7 @@ function MainPage() {
                                 <div className="col-xl-3 col-lg-4 col-md-6">
                                     <div className="widget about-widget">
                                         <div className="footer-logo ">
-                                            <img  src={logo} alt="salam"/>
+                                            <img  src={"https://cloud.tala24.co/kareston-images/1-EDITED_Footer.png"} alt="salam"/>
                                         </div>
                                         <p>
                                             قطره قطره جمع گردد وانگهی دریا شود...
