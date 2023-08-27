@@ -46,7 +46,7 @@ const Hamafarin =  () =>{
         <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-10">
                 {
-                projects?.map((project) => (
+                    projects?.map((project) => (
                         <div className="mx-4 my-4">
                             <div className="bg-white shadow-2xl flex flex-col rounded-2xl">
                                 <div className="w-full">
