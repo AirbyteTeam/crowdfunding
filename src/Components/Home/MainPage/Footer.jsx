@@ -8,7 +8,7 @@ function MainPage() {
             <footer className="site-footer">
                 <div className="footer-content-area">
                     <div className="container">
-                        <div className="footer-widgets">
+                        <div className="footer-widgets px-5">
                             <div className="row justify-content-between">
                                 <div className="col-xl-3 col-lg-4 col-md-6">
                                     <div className="widget about-widget">

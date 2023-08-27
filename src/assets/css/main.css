@@ -1677,7 +1677,7 @@ a:hover {
 .page-title-area {
     position: relative;
     z-index: 1;
-    padding: 6.5rem 0;
+    padding: 6.5rem 4rem;
     background-image: url("https://cloud.tala24.co/kareston-images/funding.jpg");
     background-size: cover;
     background-position: bottom;
@@ -1697,7 +1697,7 @@ a:hover {
 
 .page-title-area .page-title {
     color: var(--white);
-    font-size: 65px;
+    font-size: 50px;
     text-align: right;
 }
 

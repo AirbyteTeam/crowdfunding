@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 function MainPage() {
     return (
         <>
-            <section className="hero-area-two">
+            <section className="hero-area-two px-5">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-8 col-sm-11">
