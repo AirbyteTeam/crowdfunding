@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosParams = {
-    baseURL: 'http://localhost:8091/api/v1/register'
+    baseURL: 'http://localhost:8099/api/v1/register'
 }
 
 const axiosInstance = axios.create(axiosParams);
