@@ -68,16 +68,6 @@ function Partners() {
                                     <a href="#"><img src={"https://cloud.tala24.co/kareston-images/HalaFund.png"}  style={{width:"10rem"}} alt="Image"/></a>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-4 col-sm-6">
-                                <div className="logo mt-30">
-                                    <a href="#"><img src={"https://cloud.tala24.co/kareston-images/dongi.jpg"}  style={{width:"10rem"}} alt="Image"/></a>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-4 col-sm-6">
-                                <div className="logo mt-30">
-                                    <a href="#"><img src={"https://cloud.tala24.co/kareston-images/mehrabane.jpg"}  style={{width:"10rem"}} alt="Image"/></a>
-                                </div>
-                            </div>
                         </Slider>
                     </div>
                 </div>
